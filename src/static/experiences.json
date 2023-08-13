@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Pertunjukan Teater Interaktif Berbasis Teknologi",
+    "image": "14.jpg",
+    "tags": ["Director", "Stage Performance"]
+  },
+  {
+    "title": "Software Engineer at Delos",
+    "image": "14.jpg",
+    "tags": ["Software Engineer", "Profesional Experience"]
+  },
+  {
+    "title": "Pertunjukan Monolog - Kucing Hitam",
+    "image": "14.jpg",
+    "tags": ["Director", "Stage Performance"]
+  },
+  {
+    "title": "Software Engineer at Merkle Innovation",
+    "image": "14.jpg",
+    "tags": ["Software Engineer", "Profesional Experience"]
+  },
+  {
+    "title": "Pertunjukan Monolog - Hati Yang Meracau",
+    "image": "14.jpg",
+    "tags": ["Actor", "Stage Performance"]
+  },
+  {
+    "title": "Software Engineer at BAS-IT Studio",
+    "image": "14.jpg",
+    "tags": ["Software Engineer", "Profesional Experience"]
+  },
+  {
+    "title": "Pertunjukan Monolog - Di Balik Pangkuan Ibu",
+    "image": "14.jpg",
+    "tags": ["Director", "Writer", "Stage Performance"]
+  },
+  {
+    "title": "Software Engineer at Trix Games Studio",
+    "image": "14.jpg",
+    "tags": ["Software Engineer", "Profesional Experience"]
+  }
+]

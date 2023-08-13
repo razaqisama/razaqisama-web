@@ -1,0 +1,8 @@
+# .editorconfig
+
+# Top-most EditorConfig file
+root = true
+
+# Set default line endings to LF
+[*]
+end_of_line = lf
