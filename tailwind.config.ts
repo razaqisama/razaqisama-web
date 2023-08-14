@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss';
-
+/* eslint-disable global-require */
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
@@ -19,9 +19,48 @@ const config: Config = {
           500: '#7672ec',
         },
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: '#fff',
+            h1: {
+              color: '#7672ec',
+              textAlign: 'center',
+            },
+            h2: {
+              color: '#7672ec',
+            },
+            h3: {
+              color: '#7672ec',
+            },
+            h4: {
+              color: '#7672ec',
+            },
+            h5: {
+              color: '#7672ec',
+            },
+            h6: {
+              color: '#7672ec',
+              textAlign: 'center',
+            },
+            blockquote: {
+              color: '#fff',
+            },
+            code: {
+              color: '#fff',
+            },
+            a: {
+              color: '#7672ec',
+            },
+            strong: {
+              color: '#7672ec',
+            },
+          },
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };
 
 export default config;

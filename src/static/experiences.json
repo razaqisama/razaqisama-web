@@ -1,42 +1,58 @@
 [
   {
+    "id": "art-001",
     "title": "Pertunjukan Teater Interaktif Berbasis Teknologi",
     "image": "14.jpg",
+    "slug": "pertunjukan-teater-interaktif-berbasis-teknologi",
     "tags": ["Director", "Stage Performance"]
   },
   {
+    "id": "engineer-001",
     "title": "Software Engineer at Delos",
     "image": "14.jpg",
+    "slug": "software-engineer-at-delos",
     "tags": ["Software Engineer", "Profesional Experience"]
   },
   {
+    "id": "art-002",
     "title": "Pertunjukan Monolog - Kucing Hitam",
     "image": "14.jpg",
+    "slug": "my-journey-with-edgar-allan-poe",
     "tags": ["Director", "Stage Performance"]
   },
   {
+    "id": "engineer-002",
     "title": "Software Engineer at Merkle Innovation",
     "image": "14.jpg",
+    "slug": "software-engineer-at-delos",
     "tags": ["Software Engineer", "Profesional Experience"]
   },
   {
+    "id": "art-003",
     "title": "Pertunjukan Monolog - Hati Yang Meracau",
     "image": "14.jpg",
+    "slug": "my-journey-with-edgar-allan-poe",
     "tags": ["Actor", "Stage Performance"]
   },
   {
+    "id": "engineer-003",
     "title": "Software Engineer at BAS-IT Studio",
     "image": "14.jpg",
+    "slug": "software-engineer-at-bas-it",
     "tags": ["Software Engineer", "Profesional Experience"]
   },
   {
+    "id": "art-004",
     "title": "Pertunjukan Monolog - Di Balik Pangkuan Ibu",
     "image": "14.jpg",
+    "slug": "pertunjukan-monolog-di-balik-pangkuan-ibu",
     "tags": ["Director", "Writer", "Stage Performance"]
   },
   {
+    "id": "engineer-004",
     "title": "Software Engineer at Trix Games Studio",
     "image": "14.jpg",
+    "slug": "software-engineer-at-trix-games-studio",
     "tags": ["Software Engineer", "Profesional Experience"]
   }
 ]
