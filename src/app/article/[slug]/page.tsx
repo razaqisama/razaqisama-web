@@ -1,4 +1,5 @@
 import React from 'react';
+import { Metadata } from 'next';
 import Article from '@/static/article';
 
 interface ArticlePageProps {
@@ -6,6 +7,12 @@ interface ArticlePageProps {
     slug: string;
   };
 }
+
+export const metadata: Metadata = {
+  title: 'Razaqisama - Article',
+  description:
+    'Read an insightful article on a topic that explores XYZ. Gain valuable insights and information from this article by Razaqisama.',
+};
 
 function ArticlePage({ params }: ArticlePageProps) {
   return (
