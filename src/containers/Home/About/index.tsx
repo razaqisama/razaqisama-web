@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { GithubCatIcon, LinkedinIcon, InstagramIcon } from '@/icons';
 import BackButton from './Components/BackButton';
 
@@ -36,18 +37,24 @@ function About() {
             performances.
           </p>
           <div className="flex gap-4">
-            <GithubCatIcon
-              className="w-6 transform hover:scale-[120%] transition duration-300 ease-in-out cursor-pointer"
-              color="#fff"
-            />
-            <LinkedinIcon
-              className="w-6 transform hover:scale-[120%] transition duration-300 ease-in-out cursor-pointer"
-              color="#fff"
-            />
-            <InstagramIcon
-              className="w-6 transform hover:scale-[120%] transition duration-300 ease-in-out cursor-pointer"
-              color="#fff"
-            />
+            <Link href="https://github.com/razaqisama">
+              <GithubCatIcon
+                className="w-6 transform hover:scale-[120%] transition duration-300 ease-in-out cursor-pointer"
+                color="#fff"
+              />
+            </Link>
+            <Link href="https://www.linkedin.com/in/razaqisama/">
+              <LinkedinIcon
+                className="w-6 transform hover:scale-[120%] transition duration-300 ease-in-out cursor-pointer"
+                color="#fff"
+              />
+            </Link>
+            <Link href="https://www.instagram.com/joojujijoje/">
+              <InstagramIcon
+                className="w-6 transform hover:scale-[120%] transition duration-300 ease-in-out cursor-pointer"
+                color="#fff"
+              />
+            </Link>
           </div>
         </div>
       </div>
