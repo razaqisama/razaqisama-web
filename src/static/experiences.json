@@ -2,56 +2,56 @@
   {
     "id": "art-001",
     "title": "Pertunjukan Teater Interaktif Berbasis Teknologi",
-    "image": "14.jpg",
+    "image": "https://lh3.googleusercontent.com/pw/AIL4fc9Q4xHyRWEn5al0IKa16JiWQ3Ln46c6pmHPtim-s5QD8Zv6YnPHGyR6FTxvYAlY4b-rMqS2S72ozMPXjus3LrL-mNyX3oisyG65fgsfUakRI63sHzy9wRYSgYIWjtEwt2cVezeNi1YHtoCCLFZ5f-Mj=w2048-h1363-s-no?authuser=0",
     "slug": "pertunjukan-teater-interaktif-berbasis-teknologi",
-    "tags": ["Director", "Stage Performance"]
+    "tags": ["Director", "Software Engineer", "Stage Performance"]
   },
   {
     "id": "engineer-001",
     "title": "Software Engineer at Delos",
-    "image": "14.jpg",
+    "image": "https://lh3.googleusercontent.com/pw/AIL4fc88pPcv3IELW5uO1030isV-9aPmOTunIofsBJgGa4BeBIxiX17c2Z2zwDQDoMmFMisOr3YCE3hNzis7L7pjJf5oiQo_9q7poGvvjm8q6imWi_hq7TaemOfoCDwHyZmBaiOqkxt3r6vnbi24c0ZaxkPr=w1746-h986-s-no?authuser=0",
     "slug": "software-engineer-at-delos",
     "tags": ["Software Engineer", "Profesional Experience"]
   },
   {
     "id": "art-002",
     "title": "Pertunjukan Monolog - Kucing Hitam",
-    "image": "14.jpg",
+    "image": "https://lh3.googleusercontent.com/pw/AIL4fc_7jXy0BpIRsuvBqE7Bgqr8Oebo1Jgmku2-ye2q2VSgbBoUDmgkOmjz9roSpGfR4q6wSGFzpSdjWfidDXctssqLoTG1eyYP_R9g_vAT247xOQZi73wXyO9X_B8up-XcGgb-9NWa_xUbMxjHU75Dxn3h=w2048-h1363-s-no?authuser=0",
     "slug": "my-journey-with-edgar-allan-poe",
     "tags": ["Director", "Stage Performance"]
   },
   {
     "id": "engineer-002",
     "title": "Software Engineer at Merkle Innovation",
-    "image": "14.jpg",
+    "image": "https://camo.githubusercontent.com/f9478d2ad5e6fbc379feaffb97706006cdb835fa0aad40afb51c3e83707bd6fc/68747470733a2f2f692e706f7374696d672e63632f5971766d637779682f7363796c6c612d636f6d706f6e656e74732e706e67",
     "slug": "software-engineer-at-delos",
     "tags": ["Software Engineer", "Profesional Experience"]
   },
   {
     "id": "art-003",
     "title": "Pertunjukan Monolog - Hati Yang Meracau",
-    "image": "14.jpg",
+    "image": "https://lh3.googleusercontent.com/pw/AIL4fc83ntwkgDCZISNN3Dn12ZnunuLYjLBWs1ZBAg3PQtsoVX3ttgOEUCE33GSQpYDfxa-oOUU2T-zg__ZAw19QVIEQ_J2rIZvoGm6-IGBtmq8rG6ZGXu2zqxBpxKwYwrv79219C5qlTzysZ-Yu3_CC55Qk=w1280-h853-s-no?authuser=0",
     "slug": "my-journey-with-edgar-allan-poe",
     "tags": ["Actor", "Stage Performance"]
   },
   {
     "id": "engineer-003",
     "title": "Software Engineer at BAS-IT Studio",
-    "image": "14.jpg",
+    "image": "https://lh3.googleusercontent.com/pw/AIL4fc9yhaVFBuEACkenHOBj1F-FflKtFDRg7fw2GZaYcCfzFFr0imGbO04GFFdjRN9qVDzoat5sd4-Q_RVlz7QgoOq0xZoG79SMkEf2bXMtXGuos_prMWueVL6bdwCri_RiKxXF6m5hyh3tVX4NcyfY5kpQ=w964-h1718-s-no?authuser=0",
     "slug": "software-engineer-at-bas-it",
     "tags": ["Software Engineer", "Profesional Experience"]
   },
   {
     "id": "art-004",
     "title": "Pertunjukan Monolog - Di Balik Pangkuan Ibu",
-    "image": "14.jpg",
+    "image": "https://lh3.googleusercontent.com/pw/AIL4fc_AeLfcAHQAa88R8D1SFMZSuGH5STZmgQL2PG8RFqPNUhnHHz6h303LFpO5eYoSY-5dpnr66S0yiZEgSDWjkDq3J9xGNlpdz_iyAB_0osWM5uTLE370qpe8_DSUULWboAVfmz4CCzII5fCCBTQqU4jX=w2582-h1718-s-no?authuser=0",
     "slug": "pertunjukan-monolog-di-balik-pangkuan-ibu",
     "tags": ["Director", "Writer", "Stage Performance"]
   },
   {
     "id": "engineer-004",
     "title": "Software Engineer at Trix Games Studio",
-    "image": "14.jpg",
+    "image": "https://lh3.googleusercontent.com/pw/AIL4fc9yhaVFBuEACkenHOBj1F-FflKtFDRg7fw2GZaYcCfzFFr0imGbO04GFFdjRN9qVDzoat5sd4-Q_RVlz7QgoOq0xZoG79SMkEf2bXMtXGuos_prMWueVL6bdwCri_RiKxXF6m5hyh3tVX4NcyfY5kpQ=w964-h1718-s-no?authuser=0",
     "slug": "software-engineer-at-trix-games-studio",
     "tags": ["Software Engineer", "Profesional Experience"]
   }

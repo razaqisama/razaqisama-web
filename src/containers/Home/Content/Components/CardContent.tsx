@@ -28,7 +28,7 @@ function CardContent({
                 return (
                   <div
                     key={item}
-                    className="py-1 px-6 text-sm rounded-full backdrop-blur-md border-[1px] group-hover:border-main-500"
+                    className="py-1 px-6 text-sm rounded-full backdrop-blur-md border-[1px] group-hover:border-main-500 bg-black bg-opacity-50"
                   >
                     {item}
                   </div>

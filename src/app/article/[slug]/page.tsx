@@ -16,8 +16,10 @@ export const metadata: Metadata = {
 
 function ArticlePage({ params }: ArticlePageProps) {
   return (
-    <div className="flex flex-col items-center w-full p-8 overflow-y-auto">
-      <article className="prose">{Article[params.slug]}</article>
+    <div className="flex flex-col items-center w-full overflow-y-auto">
+      <article className="prose max-w-[80%] p-8 ">
+        {Article[params.slug]}
+      </article>
     </div>
   );
 }

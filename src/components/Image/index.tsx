@@ -11,7 +11,7 @@ function Images({ className, path, children }: ImagesProps) {
     <div
       className={className}
       style={{
-        background: `url('/images/${path}')`,
+        background: `url("${path}")`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center center',

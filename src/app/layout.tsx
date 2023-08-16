@@ -1,6 +1,7 @@
 import './globals.css';
 import React from 'react';
 import type { Metadata } from 'next';
+import About from '@/containers/Home/About';
 
 export const metadata: Metadata = {
   title: 'Razaqisama - Portfolio',
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body>
         <main className="h-screen p-8">
           <div className="h-[100%] flex border-[1px] rounded-xl overflow-hidden">
+            <About />
             {children}
           </div>
         </main>
