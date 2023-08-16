@@ -5,7 +5,7 @@ import BackButton from './Components/BackButton';
 
 function About() {
   return (
-    <div className="flex flex-col justify-between p-6 min-w-[500px] max-w-[500px] border-r-[1px]">
+    <div className="flex flex-col justify-between p-6 min-w-[430px] max-w-[430px] border-r-[1px]">
       <div className="flex flex-col gap-16">
         <div className="flex w-full">
           <p className="flex-1">Razaqisama</p>

@@ -32,9 +32,15 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <main className="h-screen p-8">
-          <div className="h-[100%] flex border-[1px] rounded-xl overflow-hidden">
+          <div className="hidden h-[100%] lg:flex border-[1px] rounded-xl overflow-hidden">
             <About />
             {children}
+          </div>
+          <div className="lg:hidden flex justify-center items-center text-center h-[100%] border-[1px] rounded-xl overflow-hidden">
+            <p>
+              Currently mobile view is under development, please open it on the
+              Web View.
+            </p>
           </div>
         </main>
       </body>
