@@ -2,6 +2,7 @@ import './globals.css';
 import React from 'react';
 import type { Metadata } from 'next';
 import About from '@/containers/Home/About';
+import { Providers } from '@/redux/provider';
 
 export const metadata: Metadata = {
   title: 'Razaqisama - Portfolio',
@@ -31,18 +32,20 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main className="h-screen p-8">
-          <div className="hidden h-[100%] lg:flex border-[1px] rounded-xl overflow-hidden">
-            <About />
-            {children}
-          </div>
-          <div className="lg:hidden flex justify-center items-center text-center h-[100%] border-[1px] rounded-xl overflow-hidden">
-            <p>
-              Currently mobile view is under development, please open it on the
-              Web View.
-            </p>
-          </div>
-        </main>
+        <Providers>
+          <main className="h-screen p-8">
+            <div className="hidden h-[100%] lg:flex border-[1px] rounded-xl overflow-hidden">
+              <About />
+              {children}
+            </div>
+            <div className="lg:hidden flex justify-center items-center text-center h-[100%] border-[1px] rounded-xl overflow-hidden">
+              <p>
+                Currently mobile view is under development, please open it on
+                the Web View.
+              </p>
+            </div>
+          </main>
+        </Providers>
       </body>
     </html>
   );

@@ -103,6 +103,12 @@
       }
     },
     {
+      "files": ["**/*Slice.ts"],
+      "rules": {
+        "no-param-reassign": "off"
+      }
+    },
+    {
       "files": ["**/*.ts", "**/*.tsx"],
       "parserOptions": {
         "project": ["tsconfig.json"]

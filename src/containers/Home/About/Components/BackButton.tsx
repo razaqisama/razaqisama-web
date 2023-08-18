@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import ChevronLeft from '@/icons/ChevronLeft';
+import { ChevronLeftIcon } from '@/icons';
 
 function BackButton() {
   const pathName = usePathname();
@@ -12,7 +12,7 @@ function BackButton() {
       href="/"
       className="flex gap-3 cursor-pointer hover:text-main-500 transition duration-100 ease-in-out"
     >
-      <ChevronLeft />
+      <ChevronLeftIcon />
       <p>Kembali</p>
     </Link>
   ) : null;

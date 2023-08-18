@@ -2,16 +2,16 @@ import React from 'react';
 import Link from 'next/link';
 import { GithubCatIcon, LinkedinIcon, InstagramIcon } from '@/icons';
 import BackButton from './Components/BackButton';
+import SelectMenu from './Components/SelectMenu';
 
 function About() {
   return (
-    <div className="flex flex-col justify-between p-6 min-w-[430px] max-w-[430px] border-r-[1px]">
+    <div className="flex flex-col justify-between p-6 min-w-[520px] max-w-[520px] border-r-[1px]">
       <div className="flex flex-col gap-16">
-        <div className="flex w-full">
-          <p className="flex-1">Razaqisama</p>
-          <p> | </p>
-          <div className="flex-1 flex justify-end">
-            <p>Portfolio</p>
+        <div className="flex items-center justify-between w-full">
+          <p className="">Razaqisama</p>
+          <div className=" flex justify-end">
+            <SelectMenu />
           </div>
         </div>
         <div className="flex flex-col gap-12 text-sm">
