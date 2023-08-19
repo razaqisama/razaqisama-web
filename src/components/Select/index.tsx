@@ -3,6 +3,7 @@
 import React, { useCallback, useMemo, useRef, useState } from 'react';
 import { useClickOutside } from '@/hooks/useClickOutside';
 import { Square3DStackIcon } from '@/icons';
+import truncateLongWords from '@/utils/truncateLongWords';
 
 export interface SelectItemType {
   label: string;
@@ -33,6 +34,12 @@ function Select({
     [],
   );
 
+  const selectedValue = useMemo(() => {
+    if (value) return value.label;
+
+    return selectedItem?.label;
+  }, [selectedItem, value]);
+
   const showItemsStyle = useMemo(() => {
     return showItems ? 'py-1 max-h-[135px]' : 'py-0 max-h-[0px]';
   }, [showItems]);
@@ -59,15 +66,17 @@ function Select({
   return (
     <div className="relative text-sm">
       <button
-        className="flex gap-4 justify-between px-8 py-1 items-center border-[1px] rounded-md cursor-pointer"
+        className="flex gap-4 px-4 py-1 items-center border-[1px] rounded-md cursor-pointer min-w-[200px] max-w-[200px]"
         type="button"
         onClick={handleShowItems(!showItems)}
       >
         <Square3DStackIcon className="w-5 h-5" />
-        {placeholder}
+        {selectedValue
+          ? truncateLongWords(selectedValue ?? '', 14)
+          : truncateLongWords(placeholder, 14)}
       </button>
       <div
-        className={`absolute right-0 overflow-hidden ${showItemsStyle} transition-[max-height,padding] duration-300 ease-in-out w-[200px]`}
+        className={`absolute left-0 overflow-hidden ${showItemsStyle} transition-[max-height,padding] duration-300 ease-in-out w-full`}
       >
         <div
           ref={containerRef}
@@ -79,7 +88,7 @@ function Select({
                 type="button"
                 onClick={handleClickItem(item)}
                 key={item.value}
-                className={`cursor-pointer text-start ${
+                className={`cursor-pointer ${
                   item.value === selectedItem?.value ? 'underline' : ''
                 } hover:underline px-2`}
               >
