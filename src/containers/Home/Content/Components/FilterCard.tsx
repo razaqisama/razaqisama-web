@@ -18,7 +18,7 @@ function FilterCard({ data }: FilterCardProps) {
     return data.filter((item) => item.category === path);
   }, [data, path]);
 
-  return (
+  return filteredData.length ? (
     <>
       {filteredData.map((item) => {
         return (
@@ -32,6 +32,13 @@ function FilterCard({ data }: FilterCardProps) {
         );
       })}
     </>
+  ) : (
+    <div className="h-full flex justify-center items-center">
+      <div className="w-[50%] text-center">
+        Great Content Takes Time! Stay patient as I prepare to launch new
+        updates and enhance your experience.
+      </div>
+    </div>
   );
 }
 

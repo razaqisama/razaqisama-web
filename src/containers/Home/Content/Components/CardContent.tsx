@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import Images from '@/components/Image';
+import Image from '@/components/Image';
 
 interface CardContentProps {
   title?: string;
@@ -18,9 +18,10 @@ function CardContent({
   return (
     <Link href={`/article/${slug}`}>
       <div className="group cursor-pointer flex flex-col min-h-[500px] bg-gray-900 rounded-xl overflow-hidden">
-        <Images
+        <Image
+          alt={`Illustration - ${title}`}
           path={imageUrl}
-          className="relative flex-1 border-[1px] group-hover:border-main-500 transition duration-100 ease-in-out p-4 bg-black rounded-xl shadow-[0px_0px_16px_6px_#000]"
+          className="relative flex-1 border-[1px] group-hover:border-main-500 transition duration-100 ease-in-out p-4 bg-black rounded-xl shadow-[0px_0px_16px_6px_#000] overflow-hidden"
         >
           <div className="absolute top-0 mt-4 flex gap-4">
             {tags &&
@@ -35,7 +36,7 @@ function CardContent({
                 );
               })}
           </div>
-        </Images>
+        </Image>
         <div className="flex items-center gap-12 p-4 justify-between">
           <div className="text-2xl">{title}</div>
           <div>
