@@ -1,5 +1,6 @@
 import './globals.css';
 import React from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next';
 import About from '@/containers/Home/About';
 import { Providers } from '@/redux/provider';
@@ -46,6 +47,7 @@ export default function RootLayout({
             </div>
           </main>
         </Providers>
+        <Analytics />
       </body>
     </html>
   );
