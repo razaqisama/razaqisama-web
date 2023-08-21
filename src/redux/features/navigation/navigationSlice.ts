@@ -1,9 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { NavigationPath } from './type';
-
-type NavigationState = {
-  path: NavigationPath;
-};
+import { NavigationPath, NavigationState } from './type';
 
 const initialState = {
   path: 'home',
@@ -13,12 +9,12 @@ export const navigation = createSlice({
   name: 'navigation',
   initialState,
   reducers: {
-    reset: () => initialState,
+    resetNavigation: () => initialState,
     setPath: (state, action: PayloadAction<NavigationPath>) => {
       state.path = action.payload;
     },
   },
 });
 
-export const { setPath, reset } = navigation.actions;
+export const { setPath, resetNavigation } = navigation.actions;
 export default navigation.reducer;

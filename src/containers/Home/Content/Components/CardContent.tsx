@@ -7,6 +7,7 @@ interface CardContentProps {
   imageUrl?: string;
   tags?: string[];
   slug?: string;
+  onClick?: () => void;
 }
 
 function CardContent({
@@ -14,9 +15,10 @@ function CardContent({
   imageUrl = '14.jpg',
   tags = ['Art', 'Performance'],
   slug,
+  onClick,
 }: CardContentProps) {
   return (
-    <Link href={`/article/${slug}`}>
+    <Link href={`/article/${slug}`} onClick={onClick}>
       <div className="group cursor-pointer flex flex-col min-h-[500px] bg-gray-900 rounded-xl overflow-hidden">
         <Image
           alt={`Illustration - ${title}`}

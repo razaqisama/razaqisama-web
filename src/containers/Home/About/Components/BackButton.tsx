@@ -10,9 +10,9 @@ function BackButton() {
   return pathName !== '/' ? (
     <Link
       href="/"
-      className="flex gap-3 cursor-pointer hover:text-main-500 transition duration-100 ease-in-out"
+      className="flex items-center gap-3 cursor-pointer hover:text-main-500 transition duration-100 ease-in-out"
     >
-      <ChevronLeftIcon />
+      <ChevronLeftIcon className="w-8 h-8" />
       <p>Kembali</p>
     </Link>
   ) : null;

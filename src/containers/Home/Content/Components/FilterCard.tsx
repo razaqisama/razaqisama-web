@@ -1,22 +1,55 @@
 'use client';
 
-import React, { useMemo } from 'react';
-import DummyData from '@/static/experiences.json';
-import { useAppSelector } from '@/redux/hooks';
+import React, { useCallback, useMemo } from 'react';
+import { useAppDispatch, useAppSelector } from '@/redux/hooks';
+import { ContentType } from '@/redux/features/content/type';
+import {
+  resetAboutState,
+  setAboutState,
+} from '@/redux/features/about/aboutSlice';
 import CardContent from './CardContent';
 
 interface FilterCardProps {
-  data: typeof DummyData;
+  data: ContentType[];
 }
 
 function FilterCard({ data }: FilterCardProps) {
   const path = useAppSelector((state) => state.navigationSlice.path);
+  const dispatch = useAppDispatch();
 
   const filteredData = useMemo(() => {
-    if (path === 'home') return data;
+    if (path === 'home') {
+      dispatch(resetAboutState());
+      return data;
+    }
 
     return data.filter((item) => item.category === path);
-  }, [data, path]);
+  }, [data, dispatch, path]);
+
+  const handleClickItem = useCallback(
+    (item: ContentType) => () => {
+      dispatch(
+        setAboutState({
+          title: item.title,
+          subtitle: item.subtitle,
+          content: <div className="text-sm">{item.description}</div>,
+          footer: item.skills?.length && (
+            <div className="flex flex-wrap gap-4">
+              {item.skills.map((skill) => (
+                <div
+                  key={skill}
+                  className="text-xs px-4 py-1 border-[1px] rounded-full border-main-500"
+                >
+                  {skill}
+                </div>
+              ))}
+            </div>
+          ),
+        }),
+      );
+    },
+    [dispatch],
+  );
 
   return filteredData.length ? (
     <>
@@ -28,6 +61,7 @@ function FilterCard({ data }: FilterCardProps) {
             tags={item.tags}
             slug={item.slug}
             key={item.id}
+            onClick={handleClickItem(item)}
           />
         );
       })}

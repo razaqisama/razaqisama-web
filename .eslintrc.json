@@ -103,7 +103,7 @@
       }
     },
     {
-      "files": ["**/*Slice.ts"],
+      "files": ["**/*Slice.ts", "**/*Slice.tsx"],
       "rules": {
         "no-param-reassign": "off"
       }
