@@ -117,7 +117,8 @@ const experiences: ContentType[] = [
     skills: [
       'Javascript',
       'ReactJs',
-      'Tailwindcss',
+      'GatsbyJs',
+      'TailwindCss',
       'Nodejs',
       'Microservices',
       'Postgresql',
