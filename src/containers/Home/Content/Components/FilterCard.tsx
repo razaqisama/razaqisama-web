@@ -32,19 +32,8 @@ function FilterCard({ data }: FilterCardProps) {
         setAboutState({
           title: item.title,
           subtitle: item.subtitle,
-          content: <div className="text-sm">{item.description}</div>,
-          footer: item.skills?.length && (
-            <div className="flex flex-wrap gap-4">
-              {item.skills.map((skill) => (
-                <div
-                  key={skill}
-                  className="text-xs px-4 py-1 border-[1px] rounded-full border-main-500"
-                >
-                  {skill}
-                </div>
-              ))}
-            </div>
-          ),
+          content: item.description,
+          skills: item.skills,
         }),
       );
     },

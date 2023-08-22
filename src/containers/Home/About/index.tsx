@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+import { GithubCatIcon, InstagramIcon, LinkedinIcon } from '@/icons';
 import BackButton from './Components/BackButton';
 import SelectMenu from './Components/SelectMenu';
 import AboutContent from './Components/AboutContent';
@@ -14,6 +16,26 @@ function About() {
           </div>
         </div>
         <AboutContent />
+        <div className="flex gap-4">
+          <Link href="https://github.com/razaqisama">
+            <GithubCatIcon
+              className="w-6 transform hover:scale-[120%] transition duration-300 ease-in-out cursor-pointer"
+              color="#fff"
+            />
+          </Link>
+          <Link href="https://www.linkedin.com/in/razaqisama/">
+            <LinkedinIcon
+              className="w-6 transform hover:scale-[120%] transition duration-300 ease-in-out cursor-pointer"
+              color="#fff"
+            />
+          </Link>
+          <Link href="https://www.instagram.com/joojujijoje/">
+            <InstagramIcon
+              className="w-6 transform hover:scale-[120%] transition duration-300 ease-in-out cursor-pointer"
+              color="#fff"
+            />
+          </Link>
+        </div>
       </div>
       <BackButton />
     </div>
